@@ -1,0 +1,7 @@
+qa:
+  post_comentario: 'http://jsonplaceholder.typicode.com/posts'
+
+preprod:
+
+prod:
+  
