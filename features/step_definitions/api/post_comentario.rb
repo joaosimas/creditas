@@ -1,10 +1,7 @@
 Dado(/^que eu acesse o endpoint$/) do
-
-
 end
 
 Quando(/^eu passar os parametros necessários$/) do
-
   @createbody = {
    "title": 'Tentando aqui',
    "body": 'Estou testando a API',
@@ -13,7 +10,6 @@ Quando(/^eu passar os parametros necessários$/) do
 
       @create = HTTParty.post($api['post_comentario'],
       :headers => { "Content-Type" => 'application/json' }, :body => @createbody)
-
 end
 
 Então(/^irá me trazer o corpo da request$/) do

@@ -4,21 +4,23 @@
  	include Capybara::DSL
  end
 
- Dado(/^que eu acesse o site da Dynamic Controls$/) do
+ Dado(/^que eu acesse o site \/dynamic_controls$/) do
  	visit 'https://the-internet.herokuapp.com/dynamic_controls'
+ 	puts 'abriu site'
  end
 
- Quando(/^eu clicar no botão remove$/) do
+ Quando(/^eu clicar no botão "Remove" para tirar o checkbox$/) do
  	click_button 'Remove'
- end
- 
- E(/^o botão Remove for removido$/) do
- 	expect(page).to have_content('Remove')
- 	puts 'Foi removido'
+ 	expect(page).to have_content('Add')
+ 	puts 'Checkbox removido'
  end
 
- Então(/^habilitar o botão para adicionar$/) do
- 	expect(page).to have_content('Add')
+ E(/^a funcionalidade de adicionar checkbox vai ficar disponivel$/) do
  	puts 'Botão disponivel'
  end
 
+ Entao(/^clicar em "add" para inserir o checkbox$/) do
+ 	click_button 'Add'
+ 	expect(page).to have_content('A checkbox ')
+ 	puts 'Checkbox inserido'
+ end

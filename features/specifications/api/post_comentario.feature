@@ -1,5 +1,5 @@
 #language: pt
-@post_comentario
+@post_comment
 Funcionalidade: foods
 
 Cenario: POST
