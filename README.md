@@ -15,6 +15,7 @@
 # Os testes
 
 -- Dentro de step_definitions, 3 testes(abrir nova aba, adicionar e remover checkbox e o post).
+	
 	- o teste de api funciona da seguinte forma:
 		
 		. dentro do teste tem $api, esse "$" faz referência com a pasta config > api.yml e carrega o endPoint que está lá dentro,
