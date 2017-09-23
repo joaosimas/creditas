@@ -1,6 +1,0 @@
-class Page < SitePrism::Page
-  element :nome_do_usuario, '#id_elemento_nome'
-  element :endereco_do_usuario, '.css_elemento.endereco'
-  element :cpf_do_usuario, '//input[@name="xpath_cpf"]'
-  element :botao_cadastrar, '.classe_btn'
-end

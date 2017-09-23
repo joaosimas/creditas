@@ -1,7 +1,7 @@
-Dado(/^que eu acesse o endpoint$/) do
+Dado(/^que eu acesse o endpoint \/post$/) do
 end
 
-Quando(/^eu passar os parametros necessários$/) do
+Quando(/^eu passar os parametros corretos no body tittle, body e userid$/) do
   @createbody = {
    "title": 'Tentando aqui',
    "body": 'Estou testando a API',
@@ -12,7 +12,7 @@ Quando(/^eu passar os parametros necessários$/) do
       :headers => { "Content-Type" => 'application/json' }, :body => @createbody)
 end
 
-Então(/^irá me trazer o corpo da request$/) do
+Então(/^o post vai ser executado com sucesso sendo validado pelo response code e body$/) do
   puts @create.body
   puts @create.message
   case @create.code

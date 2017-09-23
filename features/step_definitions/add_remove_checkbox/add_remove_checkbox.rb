@@ -15,7 +15,7 @@
  	puts 'Checkbox removido'
  end
 
- E(/^a funcionalidade de adicionar checkbox vai ficar disponivel$/) do
+ E(/^a funcionalidade de adicionar checkbox ficar disponivel$/) do
  	puts 'Botão disponivel'
  end
 
